@@ -118,7 +118,7 @@ for my $tr ($dom->find('.generalbody tr')->each) {
     };
 }
 
-reverse @articles if $reverse;
+@articles = reverse @articles if $reverse;
 
 
 Template::Declare->init( dispatch_to => ['Templates'] );
